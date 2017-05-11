@@ -1,0 +1,18 @@
+#:kivy 1.0.9
+#:import utils kivy.utils
+
+<CustomFontScreen>:
+    canvas.before:
+        Color:
+            rgb: utils.get_color_from_hex('#88e2f5')
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            
+    Label:
+        font_name: "fonts/comfortaa-bold"
+        font_size: sp(40)
+        center_x: root.width / 2
+        center_y: root.height / 2
+        text: "[color=#3c404c]Tourna[/color][color=#ffffff]meet[/color]"
+        markup: True
